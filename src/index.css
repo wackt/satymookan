@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600&family=JetBrains+Mono&display=swap');
+
+@theme {
+  --font-display: "Anton", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-bg: #141414;
+  --color-ink: #E4E3E0;
+  --color-accent: #F27D26;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-ink font-sans selection:bg-accent selection:text-bg;
+  }
+
+  h1, h2, h3 {
+    @apply font-display uppercase tracking-tighter;
+  }
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px var(--color-ink);
+  color: transparent;
+}
+
+.scroll-container {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
