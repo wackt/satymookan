@@ -1040,8 +1040,8 @@ const Album = () => (
         <div className="relative z-10 w-full aspect-square max-w-md mx-auto">
           <div className="w-full h-full bg-bg rounded-2xl shadow-2xl overflow-hidden rotate-3 hover:rotate-0 transition-transform duration-500">
             <img 
-              src="input_file_4.png" 
-              alt="Album Cover" 
+              src="/images/album_cover.jpg" 
+              alt="Awwal Talli — Album Cover" 
               className="w-full h-full object-cover grayscale"
               referrerPolicy="no-referrer"
             />
